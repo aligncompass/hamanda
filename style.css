@@ -1,0 +1,10 @@
+/* AlignCompass starter site. Most styling is Tailwind (via CDN) in index.html. */
+/* Keep this file small — only rules Tailwind utilities don't cover cleanly. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
