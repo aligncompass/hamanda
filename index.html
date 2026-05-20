@@ -3,73 +3,273 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamanda · Psicóloga online</title>
-  <meta name="description" content="Hamanda — psicóloga clínica. Cuidar da saúde emocional é um ato de coragem. Atendimento online por videochamada para todo o Brasil." />
+  <title>Hamanda · Psicologia com acolhimento — atendimento online</title>
+  <meta name="description" content="Hamanda é psicóloga clínica e atende online para todo o Brasil. Um espaço seguro e sem julgamentos para cuidar da ansiedade, do estresse e do autoconhecimento." />
+  <meta property="og:title" content="Hamanda · Psicologia com acolhimento" />
+  <meta property="og:description" content="Atendimento psicológico online, acolhedor e sem julgamentos, para todo o Brasil." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-rose-50 text-neutral-700 font-sans antialiased">
+<body class="bg-rose-50 text-stone-700 font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-rose-50/85 backdrop-blur border-b border-rose-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#topo" class="font-serif text-xl font-semibold text-stone-800 tracking-tight">Hamanda</a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-stone-600">
+        <a href="#ajuda" class="hover:text-[#8e4554] transition-colors">Como ajudo</a>
+        <a href="#plano" class="hover:text-[#8e4554] transition-colors">Como funciona</a>
+        <a href="#sobre" class="hover:text-[#8e4554] transition-colors">Sobre mim</a>
+        <a href="#contato" class="hover:text-[#8e4554] transition-colors">Contato</a>
+      </div>
+      <a href="#contato" class="inline-flex items-center rounded-full bg-[#d4868f] px-5 py-2 text-sm font-medium text-white shadow-sm shadow-rose-100 hover:bg-[#b56474] transition-colors">
+        Agendar consulta
+      </a>
+    </div>
+  </nav>
 
   <!-- Hero -->
-  <header class="px-6 py-24 sm:py-32">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight text-stone-800">Hamanda</h1>
-      <p class="mt-4 text-lg sm:text-xl text-neutral-600">
-        Psicologia com acolhimento &middot; atendimento online para todo o Brasil
+  <header id="topo" class="relative isolate overflow-hidden pt-16">
+    <div class="hero-bg absolute inset-0 -z-10"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-rose-50/80 via-rose-50/70 to-rose-50"></div>
+    <div class="max-w-5xl mx-auto px-6 py-24 sm:py-36 text-center reveal">
+      <p class="text-xs sm:text-sm uppercase tracking-[0.18em] text-[#b56474] font-medium">
+        Psicologia clínica &middot; Atendimento online
+      </p>
+      <h1 class="mt-5 font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-stone-800">
+        Cuidar de quem você é<br class="hidden sm:block" /> também é um ato de coragem
+      </h1>
+      <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl leading-relaxed text-stone-600">
+        A vida pede muito de você — e, às vezes, o peso de tudo isso fica difícil de carregar sozinho.
+        Sou Hamanda, psicóloga, e meu trabalho é caminhar ao seu lado para que você reencontre
+        leveza, clareza e bem-estar emocional.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contato" class="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-[#d4868f] px-8 py-3.5 text-base font-medium text-white shadow-lg shadow-rose-100 hover:bg-[#b56474] hover:-translate-y-0.5 transition-all">
+          Agendar primeira conversa
+        </a>
+        <a href="#plano" class="w-full sm:w-auto inline-flex items-center justify-center rounded-full border border-[#f0c8cf] bg-white/70 px-8 py-3.5 text-base font-medium text-[#8e4554] hover:bg-white transition-colors">
+          Veja como funciona
+        </a>
+      </div>
+      <p class="mt-8 text-sm text-stone-500">
+        Atendimento online para todo o Brasil &middot; Um espaço seguro e sem julgamentos
       </p>
     </div>
   </header>
 
   <!-- Services -->
-  <section class="px-6 py-16 sm:py-20 bg-white">
+  <section id="ajuda" class="px-6 py-20 sm:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Como posso ajudar</p>
+        <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-semibold text-stone-800">
+          Cuidado pensado para o seu momento
+        </h2>
+        <p class="mt-4 text-stone-600">
+          Cada processo é único. Conheça as principais frentes de trabalho — sempre conduzidas
+          no seu ritmo e com total sigilo.
+        </p>
+      </div>
+      <div class="mt-14 grid gap-6 sm:grid-cols-3">
+
+        <article class="reveal group rounded-3xl border border-rose-100 bg-white p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-100 text-[#b56474]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a8.96 8.96 0 0 1-9 9 8.74 8.74 0 0 1-4.07-.98L3 21l1.04-4.93A8.74 8.74 0 0 1 3 12a9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Terapia individual</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">
+            Um espaço seguro e confidencial para falar sobre o que você sente, no seu tempo
+            e sem julgamentos.
+          </p>
+        </article>
+
+        <article class="reveal group rounded-3xl border border-rose-100 bg-white p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-100 text-[#b56474]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12c-2.5 4.65-9.5 9-9.5 9Z" />
+            </svg>
+          </div>
+          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Ansiedade e estresse</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">
+            Acolhimento e ferramentas para compreender a ansiedade, aliviar o estresse do dia
+            a dia e atravessar momentos de sobrecarga.
+          </p>
+        </article>
+
+        <article class="reveal group rounded-3xl border border-rose-100 bg-white p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-100 text-[#b56474]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0-3.6 10.8c.4.3.6.8.6 1.3v.9h6v-.9c0-.5.2-1 .6-1.3A6 6 0 0 0 12 3Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 19.5h5M10 21.5h4" />
+            </svg>
+          </div>
+          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Autoconhecimento</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">
+            Um processo para se conhecer melhor, fortalecer a autoestima e construir relações
+            mais saudáveis consigo e com os outros.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan -->
+  <section id="plano" class="px-6 py-20 sm:py-24 bg-white">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-stone-800 text-center">Como posso ajudar</h2>
-      <div class="mt-10 grid gap-6 sm:grid-cols-3">
-        <div class="rounded-2xl border border-rose-200 bg-rose-50 p-6">
-          <h3 class="text-lg font-semibold text-stone-800">Terapia individual</h3>
-          <p class="mt-2 text-neutral-600">Um espaço seguro e confidencial para falar sobre o que você sente, no seu tempo e sem julgamentos.</p>
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Como funciona</p>
+        <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-semibold text-stone-800">
+          Começar é mais simples do que parece
+        </h2>
+        <p class="mt-4 text-stone-600">
+          Três passos tranquilos entre você e um cuidado que faz diferença.
+        </p>
+      </div>
+      <div class="mt-14 grid gap-8 sm:grid-cols-3">
+
+        <div class="reveal text-center">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#d4868f] font-serif text-xl font-semibold text-white shadow-lg shadow-rose-100">1</div>
+          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Agende sua conversa</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">
+            Entre em contato e escolhemos juntos o melhor horário. Sem compromisso e sem pressa.
+          </p>
         </div>
-        <div class="rounded-2xl border border-rose-200 bg-rose-50 p-6">
-          <h3 class="text-lg font-semibold text-stone-800">Ansiedade e estresse</h3>
-          <p class="mt-2 text-neutral-600">Acompanhamento para compreender e lidar com a ansiedade, o estresse e momentos de sobrecarga emocional.</p>
+
+        <div class="reveal text-center">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#d4868f] font-serif text-xl font-semibold text-white shadow-lg shadow-rose-100">2</div>
+          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Encontre um espaço seguro</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">
+            Nos encontramos por videochamada, num ambiente acolhedor e confidencial, no seu ritmo.
+          </p>
         </div>
-        <div class="rounded-2xl border border-rose-200 bg-rose-50 p-6">
-          <h3 class="text-lg font-semibold text-stone-800">Autoconhecimento</h3>
-          <p class="mt-2 text-neutral-600">Um processo para se conhecer melhor, fortalecer a autoestima e construir relações mais saudáveis.</p>
+
+        <div class="reveal text-center">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#d4868f] font-serif text-xl font-semibold text-white shadow-lg shadow-rose-100">3</div>
+          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Viva com mais leveza</h3>
+          <p class="mt-2 text-stone-600 leading-relaxed">
+            Sessão a sessão, você desenvolve autoconhecimento e ferramentas para uma vida
+            mais equilibrada.
+          </p>
         </div>
+
+      </div>
+      <div class="mt-12 text-center reveal">
+        <a href="#contato" class="inline-flex items-center justify-center rounded-full bg-[#d4868f] px-8 py-3.5 text-base font-medium text-white shadow-lg shadow-rose-100 hover:bg-[#b56474] hover:-translate-y-0.5 transition-all">
+          Quero dar o primeiro passo
+        </a>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="px-6 py-16 sm:py-20">
-    <div class="max-w-5xl mx-auto grid gap-10 sm:gap-12 sm:grid-cols-5 sm:items-center">
-      <div class="sm:col-span-2">
-        <img src="hamanda.jpg" alt="Hamanda, psicóloga" class="w-full max-w-xs mx-auto rounded-2xl object-cover shadow-md shadow-rose-200/60" loading="lazy" />
+  <section id="sobre" class="px-6 py-20 sm:py-24">
+    <div class="max-w-5xl mx-auto grid gap-12 lg:grid-cols-5 lg:items-center">
+      <div class="reveal lg:col-span-2">
+        <div class="relative mx-auto max-w-sm">
+          <div class="absolute -inset-3 -z-10 rounded-[2rem] bg-rose-200/60"></div>
+          <img
+            src="hamanda.jpg"
+            alt="Hamanda, psicóloga"
+            class="about-img w-full rounded-[1.75rem] object-cover shadow-xl shadow-rose-100"
+            loading="lazy"
+            onerror="this.classList.add('img-fallback');this.removeAttribute('src');"
+          />
+        </div>
       </div>
-      <div class="sm:col-span-3 text-center sm:text-left">
-        <h2 class="text-2xl sm:text-3xl font-semibold text-stone-800">Cuidar da saúde emocional é um ato de coragem</h2>
-        <p class="mt-5 text-lg leading-relaxed text-neutral-600">
-          Sou Hamanda, psicóloga dedicada ao atendimento clínico online. Ofereço um espaço acolhedor e livre de julgamentos para você se expressar com liberdade, no seu ritmo e respeitando a sua história.
+      <div class="reveal lg:col-span-3">
+        <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Sobre mim</p>
+        <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-semibold text-stone-800">
+          Uma escuta verdadeira pode transformar uma vida
+        </h2>
+        <p class="mt-6 text-lg leading-relaxed text-stone-600">
+          Sou Hamanda, psicóloga clínica dedicada ao atendimento online. Acredito que cuidar
+          da saúde emocional é um ato de coragem e de respeito por si mesmo.
         </p>
+        <p class="mt-4 text-lg leading-relaxed text-stone-600">
+          Ao longo da minha trajetória, acompanhei pessoas atravessando ansiedade, mudanças
+          difíceis e a busca por se conhecerem melhor — e vi de perto como um espaço de escuta
+          atenta e sem julgamentos pode abrir caminhos. Meu compromisso é oferecer esse
+          ambiente acolhedor e seguro, onde você possa se expressar com liberdade e ser ouvido
+          de verdade. Atendo pessoas de todo o Brasil por videochamada, sempre respeitando o
+          ritmo e a história de cada um.
+        </p>
+        <ul class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-stone-600">
+          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> Psicóloga clínica</li>
+          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> Atendimento 100% online</li>
+          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> Abordagem acolhedora e sem julgamentos</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="px-6 py-16 sm:py-20 bg-white">
-    <div class="max-w-2xl mx-auto text-center">
-      <h2 class="text-2xl sm:text-3xl font-semibold text-stone-800">Vamos conversar</h2>
-      <p class="mt-6 text-lg">
-        <a class="text-rose-700 hover:text-rose-900 hover:underline" href="tel:+5581986355812">+55 (81) 98635-5812</a>
-      </p>
-      <p class="mt-2 text-sm text-neutral-500">Atendimento online por videochamada &middot; todo o Brasil</p>
+  <!-- Contact / CTA -->
+  <section id="contato" class="px-6 py-20 sm:py-28">
+    <div class="max-w-3xl mx-auto reveal">
+      <div class="rounded-[2rem] bg-[#d4868f] px-8 py-14 sm:px-14 text-center shadow-xl shadow-rose-100">
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-white">
+          Vamos conversar
+        </h2>
+        <p class="mt-5 text-lg leading-relaxed text-rose-50">
+          O primeiro passo é simples: uma conversa. Entre em contato pelo WhatsApp ou ligue —
+          será um prazer te acolher.
+        </p>
+        <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/5581986355812" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3.5 text-base font-medium text-[#8e4554] hover:bg-rose-50 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.2-8.23 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z" /></svg>
+            Falar pelo WhatsApp
+          </a>
+          <a href="tel:+5581986355812" class="w-full sm:w-auto inline-flex items-center justify-center rounded-full border border-white/70 px-8 py-3.5 text-base font-medium text-white hover:bg-[#b56474] transition-colors">
+            Ligar agora
+          </a>
+        </div>
+        <div class="mt-8 space-y-1 text-sm text-rose-100">
+          <p><a class="hover:underline" href="tel:+5581986355812">+55 (81) 98635-5812</a></p>
+          <p>Atendimento online &middot; Todo o Brasil</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="px-6 py-10 text-center text-sm text-rose-300">
-    <p>&copy; Hamanda</p>
+  <footer class="px-6 py-10 text-center text-sm text-rose-400 bg-rose-50">
+    <p class="font-serif text-base text-stone-700">Hamanda</p>
+    <p class="mt-1">Psicologia com acolhimento &middot; Atendimento online para todo o Brasil</p>
+    <p class="mt-3">&copy; <span id="ano"></span> Hamanda. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // Subtle reveal-on-scroll animation
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  </script>
 
 </body>
 </html>
