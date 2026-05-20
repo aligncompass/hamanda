@@ -1,5 +1,12 @@
-/* AlignCompass starter site. Most styling is Tailwind (via CDN) in index.html. */
-/* Keep this file small — only rules Tailwind utilities don't cover cleanly. */
+/* Amanda — psychoanalysis practice site. Most styling is Tailwind (via CDN). */
+/* This file holds only what Tailwind utilities don't cover cleanly. */
+
+:root {
+  --nude: #b89478;
+  --nude-dark: #a07e63;
+  --nude-deep: #7a5d44;
+  --cream: #fbf6ef;
+}
 
 html {
   scroll-behavior: smooth;
@@ -7,4 +14,49 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
+}
+
+/* Offset anchor jumps so the fixed nav doesn't cover section headings. */
+section[id],
+header[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Hero background: warm, serene image with a soft cream/rose overlay. */
+.hero-bg {
+  background-color: #fdf2f4;
+  background-image:
+    linear-gradient(180deg, rgba(255, 244, 235, 0.55), rgba(255, 241, 242, 0.85)),
+    url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Graceful fallback if the About portrait fails to load. */
+.about-img.img-fallback {
+  background: linear-gradient(135deg, #e5d3bd, var(--nude));
+  min-height: 22rem;
+}
+
+/* Reveal-on-scroll animation (progressive enhancement). */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
