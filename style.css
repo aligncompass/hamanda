@@ -1,5 +1,12 @@
-/* Hamanda — psychology practice site. Most styling is Tailwind (via CDN). */
+/* Hamanda — psychoanalysis practice site. Most styling is Tailwind (via CDN). */
 /* This file holds only what Tailwind utilities don't cover cleanly. */
+
+:root {
+  --nude: #b89478;
+  --nude-dark: #a07e63;
+  --nude-deep: #7a5d44;
+  --cream: #fbf6ef;
+}
 
 html {
   scroll-behavior: smooth;
@@ -15,11 +22,11 @@ header[id] {
   scroll-margin-top: 5rem;
 }
 
-/* Hero background: a warm, serene image with a graceful gradient fallback. */
+/* Hero background: warm, serene image with a soft cream/rose overlay. */
 .hero-bg {
   background-color: #fdf2f4;
   background-image:
-    linear-gradient(180deg, rgba(255, 241, 242, 0.55), rgba(255, 241, 242, 0.85)),
+    linear-gradient(180deg, rgba(255, 244, 235, 0.55), rgba(255, 241, 242, 0.85)),
     url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
@@ -27,7 +34,7 @@ header[id] {
 
 /* Graceful fallback if the About portrait fails to load. */
 .about-img.img-fallback {
-  background: linear-gradient(135deg, #fbcfe8, #f0c8cf);
+  background: linear-gradient(135deg, #e5d3bd, var(--nude));
   min-height: 22rem;
 }
 
