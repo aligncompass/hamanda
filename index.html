@@ -3,392 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamanda · Psicanálise para profissionais que querem mudar de verdade</title>
-  <meta name="description" content="Hamanda é psicanalista e atende online para todo o Brasil. Um processo profundo para profissionais que querem romper padrões repetitivos e viver uma vida autêntica." />
-  <meta property="og:title" content="Hamanda · Psicanálise para mudança profunda" />
-  <meta property="og:description" content="Transformação Psicanalítica Profunda — um programa estruturado para profissionais brasileiros que querem romper padrões inconscientes e viver com liberdade emocional." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <title>Hamanda · Psicóloga online</title>
+  <meta name="description" content="Hamanda — psicóloga clínica. Cuidar da saúde emocional é um ato de coragem. Atendimento online por videochamada para todo o Brasil." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            serif: ['Fraunces', 'Georgia', 'serif'],
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-        },
-      },
-    };
-  </script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-rose-50 text-stone-700 font-sans antialiased">
+<body class="bg-rose-50 text-neutral-700 font-sans antialiased">
 
-  <!-- Navigation -->
-  <nav class="fixed top-0 inset-x-0 z-50 bg-rose-50/85 backdrop-blur border-b border-rose-100">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#topo" class="font-serif text-xl font-semibold text-stone-800 tracking-tight">Hamanda</a>
-      <div class="hidden md:flex items-center gap-8 text-sm text-stone-600">
-        <a href="#problema" class="hover:text-[#8e4554] transition-colors">Como ajudo</a>
-        <a href="#programa" class="hover:text-[#8e4554] transition-colors">O Programa</a>
-        <a href="#sobre" class="hover:text-[#8e4554] transition-colors">Sobre</a>
-        <a href="#contato" class="hover:text-[#8e4554] transition-colors">Contato</a>
-      </div>
-      <a href="#contato" class="inline-flex items-center rounded-full bg-[#d4868f] px-5 py-2 text-sm font-medium text-white shadow-sm shadow-stone-200 hover:bg-[#b56474] transition-colors">
-        Agendar Avaliação
-      </a>
-    </div>
-  </nav>
-
-  <!-- 1. Hero / Character -->
-  <header id="topo" class="relative isolate overflow-hidden pt-16">
-    <div class="hero-bg absolute inset-0 -z-10"></div>
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-rose-50/80 via-rose-50/75 to-rose-50"></div>
-    <div class="max-w-5xl mx-auto px-6 py-24 sm:py-36 text-center reveal">
-      <p class="text-xs sm:text-sm uppercase tracking-[0.18em] text-[#b56474] font-medium">
-        Psicanálise clínica &middot; Atendimento online para todo o Brasil
-      </p>
-      <h1 class="mt-5 font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-stone-800">
-        Pare de repetir os mesmos padrões.<br class="hidden sm:block" />
-        Viva uma vida autêntica e livre.
-      </h1>
-      <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl leading-relaxed text-stone-600">
-        Por fora, está tudo certo: carreira, conquistas, vida estruturada. Por dentro,
-        algo continua se repetindo — as mesmas relações, a mesma ansiedade, a mesma
-        sensação de estar travado. A psicanálise toca onde a vontade sozinha não chega:
-        o inconsciente que escreve esses padrões.
-      </p>
-      <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#contato" class="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-[#d4868f] px-8 py-3.5 text-base font-medium text-white shadow-lg shadow-stone-300/50 hover:bg-[#b56474] hover:-translate-y-0.5 transition-all">
-          Agende sua Avaliação Inicial
-        </a>
-        <a href="#programa" class="w-full sm:w-auto inline-flex items-center justify-center rounded-full border border-[#f0c8cf] bg-white/70 px-8 py-3.5 text-base font-medium text-[#8e4554] hover:bg-white transition-colors">
-          Saiba mais sobre o programa
-        </a>
-      </div>
-      <p class="mt-8 text-sm text-stone-500">
-        Para profissionais brasileiros de 30 a 55 anos &middot; Sessões por Google Meet
+  <!-- Hero -->
+  <header class="px-6 py-24 sm:py-32">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight text-stone-800">Hamanda</h1>
+      <p class="mt-4 text-lg sm:text-xl text-neutral-600">
+        Psicologia com acolhimento &middot; atendimento online para todo o Brasil
       </p>
     </div>
   </header>
 
-  <!-- 2. Problem (3 levels — internal framework labels removed) -->
-  <section id="problema" class="px-6 py-20 sm:py-24 bg-white">
+  <!-- Services -->
+  <section class="px-6 py-16 sm:py-20 bg-white">
     <div class="max-w-5xl mx-auto">
-      <div class="max-w-2xl mx-auto text-center reveal">
-        <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">O que está acontecendo</p>
-        <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-semibold text-stone-800">
-          Você não está sozinho nesse ciclo
-        </h2>
-        <p class="mt-4 text-stone-600 leading-relaxed">
-          A maioria dos profissionais bem-sucedidos que me procura sente três camadas
-          do mesmo problema acontecendo ao mesmo tempo.
-        </p>
-      </div>
-      <div class="mt-14 grid gap-6 md:grid-cols-3">
-
-        <article class="reveal rounded-3xl border border-rose-100 bg-rose-50/60 p-7">
-          <h3 class="font-serif text-xl font-semibold text-stone-800">O que se repete</h3>
-          <p class="mt-3 text-stone-600 leading-relaxed">
-            Padrões que voltam nas relações, autossabotagem na carreira, ansiedade
-            crônica, desconexão emocional. Você muda o cenário, mas a história é a
-            mesma.
-          </p>
-        </article>
-
-        <article class="reveal rounded-3xl border border-rose-100 bg-rose-50/60 p-7">
-          <h3 class="font-serif text-xl font-semibold text-stone-800">O que você sente</h3>
-          <p class="mt-3 text-stone-600 leading-relaxed">
-            Frustração, sensação de estar travado, vazio mesmo no meio das conquistas
-            — e a pergunta que não cala: <em>“por que isso sempre acontece comigo?”</em>
-          </p>
-        </article>
-
-        <article class="reveal rounded-3xl border border-rose-100 bg-rose-50/60 p-7">
-          <h3 class="font-serif text-xl font-semibold text-stone-800">O que você merece</h3>
-          <p class="mt-3 text-stone-600 leading-relaxed">
-            Você merece viver uma vida autêntica e livre — não uma vida controlada
-            por feridas inconscientes do passado. Isso não é luxo. É um direito seu.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. Guide (Hamanda) -->
-  <section id="sobre" class="px-6 py-20 sm:py-24">
-    <div class="max-w-5xl mx-auto grid gap-12 lg:grid-cols-5 lg:items-center">
-      <div class="reveal lg:col-span-2">
-        <div class="relative mx-auto max-w-sm">
-          <div class="absolute -inset-3 -z-10 rounded-[2rem] bg-[#fce4e8]/80"></div>
-          <img
-            src="hamanda.jpg"
-            alt="Hamanda, psicanalista brasileira"
-            class="about-img w-full rounded-[1.75rem] object-cover shadow-xl shadow-stone-300/50"
-            loading="lazy"
-            onerror="this.classList.add('img-fallback');this.removeAttribute('src');"
-          />
+      <h2 class="text-2xl sm:text-3xl font-semibold text-stone-800 text-center">Como posso ajudar</h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-3">
+        <div class="rounded-2xl border border-rose-200 bg-rose-50 p-6">
+          <h3 class="text-lg font-semibold text-stone-800">Terapia individual</h3>
+          <p class="mt-2 text-neutral-600">Um espaço seguro e confidencial para falar sobre o que você sente, no seu tempo e sem julgamentos.</p>
         </div>
-      </div>
-      <div class="reveal lg:col-span-3">
-        <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Quem caminha com você</p>
-        <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-semibold text-stone-800">
-          Entendo o quanto é frustrante repetir o que você já jurou nunca mais viver
-        </h2>
-        <p class="mt-6 text-lg leading-relaxed text-stone-600">
-          Sou Hamanda, psicóloga e psicanalista brasileira. Já acompanhei profissionais
-          de alto desempenho que tentaram livros, coachings, mudanças de cidade e de
-          parceiro — e nada tocava o fundo do problema. A psicanálise toca.
-        </p>
-        <p class="mt-4 text-lg leading-relaxed text-stone-600">
-          Meu trabalho une escuta empática a um processo clínico estruturado: você
-          encontra um espaço seguro para falar o que normalmente fica em silêncio, e
-          ao mesmo tempo um método para entender, no nível inconsciente, de onde vêm
-          os padrões que se repetem.
-        </p>
-        <ul class="mt-7 grid gap-2 text-sm text-stone-600 sm:grid-cols-2">
-          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> Psicóloga formada pela [universidade]</li>
-          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> CRP [número de registro]</li>
-          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> [anos] de experiência clínica</li>
-          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> Especialização em psicanálise</li>
-          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> Atendimento 100% online via Google Meet</li>
-          <li class="flex items-center gap-2"><span class="text-[#b56474]">&#10003;</span> Brasil e demais países lusófonos</li>
-        </ul>
-        <p class="mt-7 text-sm text-stone-500 italic">
-          [Espaço para um parágrafo pessoal da Hamanda — trajetória, abordagem clínica
-          e o que a motiva a trabalhar com psicanálise.]
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Plan = Grand Slam Offer -->
-  <section id="programa" class="px-6 py-20 sm:py-28 bg-white">
-    <div class="max-w-6xl mx-auto">
-
-      <div class="max-w-2xl mx-auto text-center reveal">
-        <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">O Programa</p>
-        <h2 class="mt-3 font-serif text-3xl sm:text-5xl font-semibold text-stone-800">
-          Transformação Psicanalítica Profunda
-        </h2>
-        <p class="mt-5 text-lg text-stone-600 leading-relaxed">
-          Um programa estruturado de psicanálise online, pensado para profissionais
-          que querem ir além do alívio sintomático e tocar a raiz inconsciente dos
-          padrões que se repetem.
-        </p>
-      </div>
-
-      <!-- 3-step process -->
-      <div class="mt-16 grid gap-8 sm:grid-cols-3">
-        <div class="reveal text-center">
-          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#d4868f] font-serif text-xl font-semibold text-white shadow-lg shadow-stone-300/50">1</div>
-          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Avaliação Inicial Profunda</h3>
-          <p class="mt-2 text-stone-600 leading-relaxed">
-            90 minutos para mapear sua história, padrões e objetivos. Você sai com
-            um roteiro personalizado do processo.
-          </p>
+        <div class="rounded-2xl border border-rose-200 bg-rose-50 p-6">
+          <h3 class="text-lg font-semibold text-stone-800">Ansiedade e estresse</h3>
+          <p class="mt-2 text-neutral-600">Acompanhamento para compreender e lidar com a ansiedade, o estresse e momentos de sobrecarga emocional.</p>
         </div>
-        <div class="reveal text-center">
-          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#d4868f] font-serif text-xl font-semibold text-white shadow-lg shadow-stone-300/50">2</div>
-          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Sessões semanais</h3>
-          <p class="mt-2 text-stone-600 leading-relaxed">
-            Encontros online consistentes — uma ou duas vezes por semana — onde
-            o trabalho clínico acontece, no seu ritmo.
-          </p>
-        </div>
-        <div class="reveal text-center">
-          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#d4868f] font-serif text-xl font-semibold text-white shadow-lg shadow-stone-300/50">3</div>
-          <h3 class="mt-5 font-serif text-xl font-semibold text-stone-800">Revisão mensal</h3>
-          <p class="mt-2 text-stone-600 leading-relaxed">
-            A cada mês, 30 minutos para olhar o caminho percorrido, ajustar a direção
-            e celebrar conquistas reais.
-          </p>
-        </div>
-      </div>
-
-      <!-- Pricing -->
-      <div class="mt-20 grid gap-8 lg:grid-cols-2">
-
-        <article class="reveal relative rounded-[2rem] border border-stone-200 bg-white p-8 sm:p-10 shadow-sm">
-          <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Plano Padrão</p>
-          <h3 class="mt-3 font-serif text-2xl font-semibold text-stone-800">1 sessão por semana</h3>
-          <p class="mt-6 font-serif text-4xl font-semibold text-stone-800">R$ 1.497<span class="text-lg font-medium text-stone-500"> / mês</span></p>
-          <p class="mt-1 text-sm text-stone-500">Compromisso inicial mínimo: 3 meses · depois mês a mês</p>
-          <ul class="mt-7 space-y-3 text-stone-700">
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> 4 sessões por mês, 50 minutos cada</li>
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> Avaliação Inicial Profunda de 90 minutos inclusa</li>
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> Todos os bônus do programa</li>
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> Atendimento online via Google Meet</li>
-          </ul>
-          <a href="#contato" class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-[#d4868f] px-6 py-3 text-base font-medium text-white hover:bg-[#b56474] transition-colors">
-            Quero o Plano Padrão
-          </a>
-        </article>
-
-        <article class="reveal relative rounded-[2rem] border border-[#f0c8cf] bg-[#fff5f7] p-8 sm:p-10 shadow-md">
-          <span class="absolute -top-3 left-8 inline-flex items-center rounded-full bg-[#8e4554] px-3 py-1 text-xs font-medium text-white">Recomendado</span>
-          <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Plano Intensivo</p>
-          <h3 class="mt-3 font-serif text-2xl font-semibold text-stone-800">2 sessões por semana</h3>
-          <p class="mt-6 font-serif text-4xl font-semibold text-stone-800">R$ 2.697<span class="text-lg font-medium text-stone-500"> / mês</span></p>
-          <p class="mt-1 text-sm text-stone-500">Compromisso inicial mínimo: 3 meses · depois mês a mês</p>
-          <ul class="mt-7 space-y-3 text-stone-700">
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> 8 sessões por mês, 50 minutos cada</li>
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> Profundidade maior e progresso mais rápido</li>
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> Avaliação Inicial Profunda de 90 minutos inclusa</li>
-            <li class="flex gap-3"><span class="text-[#b56474]">&#10003;</span> Todos os bônus do programa</li>
-          </ul>
-          <a href="#contato" class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-[#d4868f] px-6 py-3 text-base font-medium text-white hover:bg-[#b56474] transition-colors">
-            Quero o Plano Intensivo
-          </a>
-        </article>
-
-      </div>
-
-      <!-- Bonuses -->
-      <div class="mt-20 rounded-[2rem] bg-rose-50/70 border border-rose-100 p-8 sm:p-12 reveal">
-        <div class="max-w-2xl">
-          <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Incluso em ambos os planos</p>
-          <h3 class="mt-3 font-serif text-2xl sm:text-3xl font-semibold text-stone-800">
-            Bônus do programa
-          </h3>
-          <p class="mt-3 text-stone-600">
-            Recursos pensados para sustentar o trabalho entre as sessões e prolongar
-            o resultado muito além delas.
-          </p>
-        </div>
-        <ul class="mt-8 grid gap-5 md:grid-cols-2">
-          <li class="flex gap-4">
-            <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#d4868f] text-white text-sm font-semibold">1</span>
-            <div>
-              <h4 class="font-serif text-lg font-semibold text-stone-800">Avaliação Inicial Profunda</h4>
-              <p class="text-stone-600 leading-relaxed">90 minutos no início + roteiro personalizado do seu processo.</p>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#d4868f] text-white text-sm font-semibold">2</span>
-            <div>
-              <h4 class="font-serif text-lg font-semibold text-stone-800">Suporte ilimitado entre sessões</h4>
-              <p class="text-stone-600 leading-relaxed">Áudios ou mensagens seguras quando algo importante aparecer.</p>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#d4868f] text-white text-sm font-semibold">3</span>
-            <div>
-              <h4 class="font-serif text-lg font-semibold text-stone-800">Biblioteca privada de recursos</h4>
-              <p class="text-stone-600 leading-relaxed">Guia de diário de sonhos, exercícios, leituras em português e rastreador de progresso.</p>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#d4868f] text-white text-sm font-semibold">4</span>
-            <div>
-              <h4 class="font-serif text-lg font-semibold text-stone-800">Revisão mensal de progresso</h4>
-              <p class="text-stone-600 leading-relaxed">30 minutos por mês para revisar o caminho e ajustar a direção.</p>
-            </div>
-          </li>
-          <li class="flex gap-4 md:col-span-2">
-            <span class="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#d4868f] text-white text-sm font-semibold">5</span>
-            <div>
-              <h4 class="font-serif text-lg font-semibold text-stone-800">Acesso vitalício aos resumos das sessões</h4>
-              <p class="text-stone-600 leading-relaxed">Mesmo depois do término do programa, você mantém os registros do seu processo.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Guarantees + Client Responsibility -->
-      <div class="mt-12 grid gap-6 md:grid-cols-3 reveal">
-        <div class="rounded-3xl border border-[#f0c8cf] bg-white p-7">
-          <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Garantia ética</p>
-          <h4 class="mt-3 font-serif text-xl font-semibold text-stone-800">Garantia de Comparecimento</h4>
-          <p class="mt-3 text-stone-600 leading-relaxed">
-            Se eu precisar desmarcar uma sessão, ela é reposta sem custo, em horário
-            combinado com você.
-          </p>
-        </div>
-        <div class="rounded-3xl border border-[#f0c8cf] bg-white p-7">
-          <p class="text-xs uppercase tracking-[0.18em] text-[#b56474] font-medium">Garantia ética</p>
-          <h4 class="mt-3 font-serif text-xl font-semibold text-stone-800">Revisão de Progresso após o 1º mês</h4>
-          <p class="mt-3 text-stone-600 leading-relaxed">
-            Ao final do primeiro mês, fazemos uma revisão honesta. Se a psicanálise
-            não for o caminho certo para o seu momento, conversamos com transparência
-            sobre as próximas opções.
-          </p>
-        </div>
-        <div class="rounded-3xl bg-stone-800 text-stone-100 p-7">
-          <p class="text-xs uppercase tracking-[0.18em] text-stone-300 font-medium">Sua parte no processo</p>
-          <h4 class="mt-3 font-serif text-xl font-semibold text-white">O que depende de você</h4>
-          <p class="mt-3 leading-relaxed">
-            O sucesso desse processo depende da sua participação ativa: comparecer
-            a todas as sessões, ser aberto e honesto, e dedicar tempo a reflexões
-            leves entre os encontros. A psicanálise é um trabalho a dois.
-          </p>
-        </div>
-      </div>
-
-      <div class="mt-14 text-center reveal">
-        <a href="#contato" class="inline-flex items-center justify-center rounded-full bg-[#d4868f] px-10 py-4 text-base font-medium text-white shadow-lg shadow-stone-300/50 hover:bg-[#b56474] hover:-translate-y-0.5 transition-all">
-          Agende sua Avaliação Inicial
-        </a>
-        <p class="mt-3 text-sm text-stone-500">Resposta pessoal em até 24h úteis</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 5. Call to Action / Contact -->
-  <section id="contato" class="px-6 py-20 sm:py-28">
-    <div class="max-w-3xl mx-auto reveal">
-      <div class="rounded-[2rem] bg-[#d4868f] px-8 py-14 sm:px-14 text-center shadow-xl shadow-stone-300/50">
-        <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-white">
-          Agende sua Avaliação Inicial
-        </h2>
-        <p class="mt-5 text-lg leading-relaxed text-[#fee9ed]">
-          90 minutos para entender, com profundidade, onde você está e o que pode
-          mudar. Sem compromisso de continuidade — apenas uma conversa clínica
-          séria sobre você.
-        </p>
-        <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://wa.me/5581986355812" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3.5 text-base font-medium text-[#8e4554] hover:bg-[#fff5f7] transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.2-8.23 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z" /></svg>
-            Falar pelo WhatsApp
-          </a>
-          <a href="tel:+5581986355812" class="w-full sm:w-auto inline-flex items-center justify-center rounded-full border border-white/70 px-8 py-3.5 text-base font-medium text-white hover:bg-[#b56474] transition-colors">
-            Ligar agora
-          </a>
-        </div>
-        <div class="mt-8 space-y-1 text-sm text-[#fee9ed]">
-          <p><a class="hover:underline" href="tel:+5581986355812">+55 (81) 98635-5812</a></p>
-          <p>Atendimento online &middot; Todo o Brasil &middot; Outros países lusófonos sob consulta</p>
+        <div class="rounded-2xl border border-rose-200 bg-rose-50 p-6">
+          <h3 class="text-lg font-semibold text-stone-800">Autoconhecimento</h3>
+          <p class="mt-2 text-neutral-600">Um processo para se conhecer melhor, fortalecer a autoestima e construir relações mais saudáveis.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="px-6 py-10 text-center text-sm text-stone-500 bg-rose-50">
-    <p class="font-serif text-base text-stone-700">Hamanda</p>
-    <p class="mt-1">Psicanálise online &middot; CRP [número de registro]</p>
-    <p class="mt-1">Atendimento para todo o Brasil &middot; Outros países lusófonos sob consulta</p>
-    <p class="mt-3">&copy; <span id="ano"></span> Hamanda. Todos os direitos reservados.</p>
+  <!-- About -->
+  <section class="px-6 py-16 sm:py-20">
+    <div class="max-w-5xl mx-auto grid gap-10 sm:gap-12 sm:grid-cols-5 sm:items-center">
+      <div class="sm:col-span-2">
+        <img src="hamanda.jpg" alt="Hamanda, psicóloga" class="w-full max-w-xs mx-auto rounded-2xl object-cover shadow-md shadow-rose-200/60" loading="lazy" />
+      </div>
+      <div class="sm:col-span-3 text-center sm:text-left">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-stone-800">Cuidar da saúde emocional é um ato de coragem</h2>
+        <p class="mt-5 text-lg leading-relaxed text-neutral-600">
+          Sou Hamanda, psicóloga dedicada ao atendimento clínico online. Ofereço um espaço acolhedor e livre de julgamentos para você se expressar com liberdade, no seu ritmo e respeitando a sua história.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="px-6 py-16 sm:py-20 bg-white">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-stone-800">Vamos conversar</h2>
+      <p class="mt-6 text-lg">
+        <a class="text-rose-700 hover:text-rose-900 hover:underline" href="tel:+5581986355812">+55 (81) 98635-5812</a>
+      </p>
+      <p class="mt-2 text-sm text-neutral-500">Atendimento online por videochamada &middot; todo o Brasil</p>
+    </div>
+  </section>
+
+  <footer class="px-6 py-10 text-center text-sm text-rose-300">
+    <p>&copy; Hamanda</p>
   </footer>
-
-  <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-  </script>
 
 </body>
 </html>
